@@ -175,3 +175,132 @@ footer a {
 footer picture img {
     width : 98vw
 }
+
+@media (min-width:500px) {
+    header { 
+        display: block;
+    }
+
+    header picture {
+        position: relative;
+        margin-left: 6vw;
+        margin-right: 3vw;
+        overflow: visible;
+        float: left;
+    }
+
+    header picture img {
+        width: 51vw;
+        box-shadow: 4px 4px 6px black;
+    }
+
+    header picture h1 {
+        position: absolute;
+        top: 0;
+        bottom: initial;
+        left:initial;
+        right: -67%;
+        z-index: 2;
+        color: white;
+        font-size: 3em;
+        text-shadow: 2px 2px 2px black;
+        margin-bottom: 0.2em;
+    }
+
+    .headerBackgroundContainer::before {
+        height: 109%;
+        transform: rotate(168deg);
+        }
+    .aboutMe {
+            margin-top: 269px;
+            margin-left: 85px;
+            box-shadow: 6px 6px 10px black;
+        }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-left: 15px;
+    }
+    main h3 {
+        grid-area: 1/1/2/3;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .project h5 {
+        margin-right: 30px;
+    }
+
+}
+
+@media (min-width:1000px){
+    header { 
+        display: flex;
+        justify-content: center;
+        align-items: centers;
+    }
+
+    header picture {
+        position: relative;
+        margin-left: 6vw;
+        margin-right: 0;
+        overflow: visible;
+    }
+
+    header picture img {
+        width: 40vw;
+        box-shadow: 4px 4px 6px black;
+    }
+
+    header picture h1 {
+        position: absolute;
+        top: initial;
+        bottom: 0;
+        left:0;
+        right: initial;
+        z-index: 2;
+        color: white;
+        font-size: 3em;
+        text-shadow: 2px 2px 2px black;
+        margin-bottom: 0.2em;
+    }
+
+    .headerBackgroundContainer::before {
+        height: 109%;
+        transform: rotate(168deg);
+        }
+        .aboutMe {
+            margin-top: 0;
+            margin-left: 0;
+            background-color: white;
+            padding: 30px;
+        }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        margin-left: 15px;
+    }
+    main h3 {
+        grid-area: 1/1/2/4;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .project h5 {
+        margin-right: 30px;
+    }
+    .headerLinks {
+        justify-content: flex-end;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    footer picture img {
+        max-width : 40vw
+    }
+}
